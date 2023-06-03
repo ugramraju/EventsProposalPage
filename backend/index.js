@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const dotEnv = require("dotenv").config();
+require("dotenv").config();
 const cors = require("cors");
 const fileupload = require("express-fileupload");
 
@@ -27,7 +27,7 @@ app.use("/api", proposalsRouter);
 mongoose.connect(process.env.MONGO_CONNECTION)
   .then(() => {
     console.log("Database Connected Successfully");
-    app.listen(PORT, () => console.log(`App Listen On Port ${PORT}`));
+    app.listen(PORT, () => console.log(`App Listening on Port ${PORT}`));
   })
   .catch((err) => {
     console.error("Error connecting to the database:", err);
