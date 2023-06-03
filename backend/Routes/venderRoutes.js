@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const middleware = require("../Middleware/middleWare")
 const router = express.Router();
-
+router.use(express.json());
 router.post("/vender/register", async(req,res)=>{
     try{
         const{name,email,contact,password,confirmPassword} = req.body;
