@@ -14,9 +14,13 @@ const UserLogin = () => {
       setErrorMsg("Kindly fill in all the details");
       return;
     }
-
+    const config = {
+      headers: {
+        "content-type": "application/json",
+      },
+    };
     axios
-      .post("https://my-eventproposalpage.onrender.com/api/user/login", data)
+      .post("https://my-eventproposalpage.onrender.com/api/user/login", data, config)
       .then((res) => {
         setData({});
         setErrorMsg("");

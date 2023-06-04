@@ -20,9 +20,13 @@ const UserSignUp = () => {
       setErrorMsg("Password and Confirm Password do not match");
       return;
     }
-
+    const config = {
+      headers: {
+        "content-type": "application/json",
+      },
+    };
     axios
-      .post("https://my-eventproposalpage.onrender.com/api/user/register", data)
+      .post("https://my-eventproposalpage.onrender.com/api/user/register", data, config)
       .then((res) => {
         setData({});
         setErrorMsg("");

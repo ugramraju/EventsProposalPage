@@ -21,7 +21,7 @@ const VenderLogin = () => {
         JSON.stringify(data),
         {
           headers: {
-            "Content-Type": "text/plain",
+            "Content-Type": "application/json",
           },
         }
         
