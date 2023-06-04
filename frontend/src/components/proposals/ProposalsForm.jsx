@@ -108,7 +108,7 @@ const ProposalsForm = () => {
     });
 
     try {
-      await axios.post("http://localhost:8000/api/proposals", formData, {
+      await axios.post("https://my-eventproposalpage.onrender.com/api/proposals", formData, {
         headers: {
           "x-token": token,
         },

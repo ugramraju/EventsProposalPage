@@ -18,7 +18,7 @@ function ProposalsData() {
  useEffect(() => {
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/proposals", {
+      const response = await axios.get("https://my-eventproposalpage.onrender.com/api/proposals", {
         headers: {
           "x-token": token,
         },
@@ -46,7 +46,7 @@ function ProposalsData() {
     try {
       const confirmed = window.confirm("Are you sure you want to delete this proposal?");
       if (confirmed) {
-        await axios.delete(`http://localhost:8000/api/proposals/${id}`, {
+        await axios.delete(`https://my-eventproposalpage.onrender.com/api/proposals/${id}`, {
           headers: {
             "x-token": token,
           },

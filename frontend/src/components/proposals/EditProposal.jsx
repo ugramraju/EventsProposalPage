@@ -24,7 +24,7 @@ const EditProposal = () => {
   useEffect(() => {
     const fetchProposal = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/proposals/${id}`, {
+        const response = await axios.get(`https://my-eventproposalpage.onrender.com/api/proposals/${id}`, {
           headers: {
             "x-token": token,
           },
@@ -144,7 +144,7 @@ const EditProposal = () => {
     });
 
     try {
-      await axios.put(`http://localhost:8000/api/proposals/${id}`, formData, {
+      await axios.put(`https://my-eventproposalpage.onrender.com/api/proposals/${id}`, formData, {
         headers: {
           "x-token": token,
         },

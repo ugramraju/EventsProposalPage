@@ -12,7 +12,7 @@ const MainDisplay = () => {
   useEffect(() => {
     const fetchProposal = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/getproposals/${id}`);
+        const response = await axios.get(`https://my-eventproposalpage.onrender.com/api/getproposals/${id}`);
         setProposal(response.data.data);
       } catch (error) {
         console.error(error);

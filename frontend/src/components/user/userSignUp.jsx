@@ -22,7 +22,7 @@ const UserSignUp = () => {
     }
 
     axios
-      .post("http://localhost:8000/api/user/register", data)
+      .post("https://my-eventproposalpage.onrender.com/api/user/register", data)
       .then((res) => {
         setData({});
         setErrorMsg("");

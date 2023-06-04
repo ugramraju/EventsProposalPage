@@ -16,7 +16,7 @@ const VenderLogin = () => {
     }
 
     axios
-      .post("http://localhost:8000/api/vender/login", data)
+      .post("https://my-eventproposalpage.onrender.com/api/vender/login", data)
       .then((res) => {
         setData({});
         setErrorMsg("");

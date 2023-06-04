@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://friendly-alpaca-87e68d.netlify.app",
   credentials: true
 }));
 app.use(fileupload({

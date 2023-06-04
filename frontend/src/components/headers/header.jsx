@@ -48,7 +48,7 @@ const Header = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/vender/profile", {
+        const response = await fetch("https://my-eventproposalpage.onrender.com/api/vender/profile", {
           headers: {
             "x-token": localStorage.getItem("token"),
           },
