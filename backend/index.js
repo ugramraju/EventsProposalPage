@@ -24,12 +24,9 @@ app.use("/api", userRouter);
 app.use("/api", venderRouter);
 app.use("/api", proposalsRouter);
 
-mongoose.connect(process.env.MONGO_CONNECTION)
-  .then(() => {
-    console.log("Database Connected Successfully");
-    app.listen(PORT, () => console.log(`App Listening on Port ${PORT}`));
-  })
-  .catch((err) => {
-    console.error("Error connecting to the database:", err);
-    process.exit(1);
-  });
+app.listen(PORT, () => console.log(`App Listening on Port ${PORT}`));
+
+mongoose.connect(process.env.MONGO_DBCONNECTION,{
+     useUnifiedTopology:true,
+     useNewUrlParser:true
+  }).then(()=>console.log("DataBase Connected SuccessFully"))
