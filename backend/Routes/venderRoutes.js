@@ -11,10 +11,13 @@ router.post("/vender/register", async (req, res) => {
   try {
     const { name, email, contact, password, confirmPassword } = req.body;
 
-    const exist = await venderSchema.findOne({ $or: [{ email }, { contact }] });
-    if (exist) {
-      return res.status(400).send("User Already Exists");
-    }
+    const exist = await venderSchema.findOne({ $or: [{ email }, { contact }] })
+  .maxTimeMS(15000); // Set the timeout value to 15 seconds (15000 milliseconds)
+
+if (exist) {
+  return res.status(400).send("User Already Exists");
+}
+
 
     if (password !== confirmPassword) {
       return res.status(400).send("Passwords do not match");
