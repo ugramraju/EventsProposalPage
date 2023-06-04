@@ -24,6 +24,7 @@ const VenderLogin = () => {
             "Content-Type": "text/plain",
           },
         }
+        
       )
       .then((res) => {
         setData({});
