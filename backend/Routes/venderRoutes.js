@@ -32,10 +32,11 @@ router.post("/vender/register", async (req, res) => {
 
     res.status(201).send("Registration Successful");
   } catch (err) {
-    console.error(err); // Log the error to the console for debugging purposes
-    res.status(400).send("Registration Failed");
+    console.error(err);
+    res.status(400).send(`Registration Failed: ${err.message}`);
   }
 });
+
 
 
 router.post("/vender/login", async (req, res) => {
