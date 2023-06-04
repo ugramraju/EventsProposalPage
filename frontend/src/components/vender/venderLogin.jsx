@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const VenderLogin = () => {
   const navigate = useNavigate();
@@ -16,7 +16,15 @@ const VenderLogin = () => {
     }
 
     axios
-      .post("https://my-eventproposalpage.onrender.com/api/vender/login", data)
+      .post(
+        "https://my-eventproposalpage.onrender.com/api/vender/login",
+        JSON.stringify(data),
+        {
+          headers: {
+            "Content-Type": "text/plain",
+          },
+        }
+      )
       .then((res) => {
         setData({});
         setErrorMsg("");
@@ -40,7 +48,7 @@ const VenderLogin = () => {
   return (
     <div className="box1">
       <span id="errMsg-1">{errorMsg}</span>
-      <h1 style={{fontSize:"1.5em"}}>Sign in your Account</h1>
+      <h1 style={{ fontSize: "1.5em" }}>Sign in your Account</h1>
       <form id="form">
         <input
           type="text"
@@ -55,11 +63,16 @@ const VenderLogin = () => {
           value={data.password || ""}
           onChange={(e) => setData({ ...data, password: e.target.value })}
           autoComplete="current-password"
-        />  
+        />
       </form>
-      <button type="submit" id="btn" onClick={handleSubmit} className="login_register_btn">
-          LOGIN
-        </button>
+      <button
+        type="submit"
+        id="btn"
+        onClick={handleSubmit}
+        className="login_register_btn"
+      >
+        LOGIN
+      </button>
     </div>
   );
 };
