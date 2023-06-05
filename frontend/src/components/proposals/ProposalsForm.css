@@ -178,3 +178,15 @@ body{
 button:hover {
   cursor: pointer;
 }
+@media (max-width: 1300px) {
+  .leftSide-container #eventName,
+  .side-by-side-inputs > section > select,
+  #budget,
+  .side-by-side-inputs > section > input,
+  #description,
+  #foodPreferences,
+  #events {
+    width: 100%;
+    /* Adjust the height as per your requirement */
+  }
+}

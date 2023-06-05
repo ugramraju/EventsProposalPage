@@ -90,12 +90,12 @@
   margin-top: 2em;
 }
 .create-button {
-  width: 8em;
-  height: 3.5em;
+  width: 7em;
+  height: 3em;
   background: #4e94f4 0% 0% no-repeat padding-box;
   border-radius: 8px;
   font: normal normal bold 1em Open Sans;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   color: #ffffff;
   text-transform: uppercase;
   opacity: 1;
