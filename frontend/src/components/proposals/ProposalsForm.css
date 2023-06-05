@@ -184,10 +184,12 @@ button:hover {
   .side-by-side-inputs > section > input >
   #budget, #fromDate, #toDate
   .side-by-side-inputs > section > input,
-  #description,
   #foodPreferences,
-  #events {
+  #events,.file-container {
     width: 100%;
     /* Adjust the height as per your requirement */
+  }
+  #description{
+    width:100%;
   }
 }
