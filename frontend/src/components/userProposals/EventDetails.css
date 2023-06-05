@@ -10,12 +10,13 @@
   .events_display_container {
     display: grid;
     grid-template-columns: repeat(5, 18%);
-    justify-items: center; /* Set the number of columns as per your requirement */
-    margin:50px; 
-    margin-top: 30px;/* Remove the comma after "40px" */
+    justify-items: center;
+    margin: 50px;
+    margin-top: 30px;
     border-radius: 20px;
-
+    grid-gap: 10px; /* Add the desired gap value here */
   }
+  
   .events_display_container img{
     width:100%;
     height: 180px;
