@@ -43,17 +43,17 @@ const DisplayEvent = () => {
         <p className="disply_id_box">ID:<b> {id}</b></p>
         <div className="display_events_details_box">
         <p>Name:<b>{createdBy.name}</b></p>
-        <p>Email: <b>{createdBy.email}</b></p>
+        <p style={{fontSize:"0.8em"}}>Email: <b>{createdBy.email}</b></p>
         <div style={{display:"flex", justifyContent:"space-between", fontSize:"0.8em"}}>
           <span>StartDate: <b>{fromDate}</b></span>
           <span>EndDate: <b>{toDate}</b></span>
         </div>
         <div style={{display:"flex", gap:"25%"}}>
           <div>
-            <p>EventType</p>
-            <p style={{color:"#006BD9", backgroundColor:"#D9ECFF", padding:"5px"}}><b>{eventType}</b></p>
+            <p style={{fontSize:"0.8em"}}>EventType</p>
+            <p style={{color:"#006BD9", backgroundColor:"#D9ECFF", padding:"5px", fontSize:"0.8em"}}><b>{eventType}</b></p>
           </div>
-          <div>
+          <div style={{fontSize:"0.8em"}}>
             <p>EventClass</p>
             <p><b>Class A</b></p>
           </div>
