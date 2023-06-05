@@ -44,7 +44,7 @@ const Events = () => {
             >
               {item.images.length > 0 && <img src={item.images[0]} alt="imagepic" />}
               <div className="events-budget-name-box">
-                <p style={{ margin: "0", padding: "0", fontWeight: "bold", fontSize: "1.3em" }}>{item.eventName}</p>
+                <p style={{ margin: "0", padding: "0", fontWeight: "bold", fontSize: "0.8em" }}>{item.eventName}</p>
                 <p style={{ margin: "0", padding: "0", fontWeight: "bold" }}>{item.budget}</p>
                 <p style={{ margin: "0", padding: "0" }}>{item.placeOfEvent}</p>
               </div>
