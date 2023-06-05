@@ -37,8 +37,8 @@ const Events = () => {
                 boxShadow: "0px 3px 6px #00000029",
                 borderRadius: "4px",
                 margin: "10px",
-                height: "300px",
-                width: "300px",
+                height: "200px",
+                width: "200px",
               }}
               onClick={() => handleClick(item)}
             >
