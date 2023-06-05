@@ -19,7 +19,7 @@ app.use(
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors({
-  origin: "https://friendly-alpaca-87e68d.netlify.app",
+  origin: "https://events-proposals-paage.netlify.app",
   credentials: true
 }));
 app.use(fileupload({
