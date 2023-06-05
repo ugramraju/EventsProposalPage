@@ -44,7 +44,7 @@ const UserLogin = () => {
   return (
     <div className="box1">
       <span id="errMsg-1">{errorMsg}</span>
-      <h1 style={{fontSize:"1.5em"}}>Sign in your Account</h1>
+      <h1 style={{fontSize:"1em"}}>Sign in your Account</h1>
       <form id="form">
         <input
           type="text"
