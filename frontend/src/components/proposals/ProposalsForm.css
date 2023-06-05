@@ -13,7 +13,7 @@ body {
 .body-container {
   background-image: url("../images/private-party-venues.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .main-container {
