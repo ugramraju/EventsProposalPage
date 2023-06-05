@@ -181,7 +181,8 @@ button:hover {
 @media (max-width: 1300px) {
   .leftSide-container #eventName,
   .side-by-side-inputs > section > select,
-  #budget,
+  .side-by-side-inputs > section > input >
+  #budget, #fromDate, #toDate
   .side-by-side-inputs > section > input,
   #description,
   #foodPreferences,
