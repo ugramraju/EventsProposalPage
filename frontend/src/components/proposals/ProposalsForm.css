@@ -17,7 +17,7 @@ body {
 }
 
 .main-container {
-  width: 60%;
+  width: 50%;
   max-width: 100%;
   height: auto;
   background: #ffffff;
@@ -115,7 +115,6 @@ body {
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
-  margin-bottom: 1em;
 }
 
 .side-by-side-inputs > section > input {
