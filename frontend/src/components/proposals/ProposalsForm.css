@@ -13,18 +13,20 @@ body {
 .body-container {
   background-image: url("../images/private-party-venues.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main-container {
   width: 60%;
-  height: 46.875em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  max-width: 100%;
+  height: auto;
+  background: #ffffff;
   border: 1px solid #e5e0e0;
   border-radius: 12px;
   opacity: 1;
   margin: auto;
   margin-top: 8em;
+  padding: 2em;
 }
 
 .header {
@@ -59,17 +61,20 @@ body {
 
 .form-inside-boxes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .leftSide-container #eventName {
-  width: 28.75em;
+  width: 100%;
+  max-width: 28.75em;
   height: 2.5em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
   padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 .leftSide-container .eventName-text {
@@ -82,12 +87,14 @@ body {
 }
 
 .side-by-side-inputs > section > select {
-  width: 12.3125em;
+  width: 100%;
+  max-width: 12.3125em;
   height: 2.5em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
+  margin-bottom: 1em;
 }
 
 .label-text {
@@ -101,31 +108,37 @@ body {
 }
 
 #budget {
-  width: 12.3125em;
+  width: 100%;
+  max-width: 12.3125em;
   height: 2.5em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
+  margin-bottom: 1em;
 }
 
 .side-by-side-inputs > section > input {
-  width: 12.3125em;
+  width: 100%;
+  max-width: 12.3125em;
   height: 2.5em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
+  margin-bottom: 1em;
 }
 
 #description {
-  width: 28.75em;
+  width: 100%;
+  max-width: 28.75em;
   height: 9em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
   padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 .file-container {
@@ -133,6 +146,7 @@ body {
   height: 2em;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .preview-images-container {
@@ -162,30 +176,35 @@ body {
 }
 
 #foodPreferences {
-  width: 28.75em;
+  width: 100%;
+  max-width: 28.75em;
   height: 7em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
   padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 #events {
-  width: 28.75em;
+  width: 100%;
+  max-width: 28.75em;
   height: 7em;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 4px;
   opacity: 1;
   padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 .button-container button,
 .update-btn {
-  width: 8em;
+  width: 100%;
+  max-width: 8em;
   height: 3.5em;
-  background: #4e94f4 0% 0% no-repeat padding-box;
+  background: #4e94f4;
   border-radius: 8px;
   font: normal normal bold 1em Open Sans;
   letter-spacing: 0.25em;
@@ -193,11 +212,11 @@ body {
   text-transform: uppercase;
   opacity: 1;
   border-color: #4e94f4;
+  margin-top: 1em;
 }
 
 .button-container {
   text-align: center;
-  margin-top: 1.5em;
 }
 
 button:hover {
