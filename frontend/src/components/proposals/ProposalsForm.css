@@ -19,7 +19,7 @@ body {
 .main-container {
   width: 60%;
   max-width: 100%;
-  height: auto;
+  height: 50vh;
   background: #ffffff;
   border: 1px solid #e5e0e0;
   border-radius: 12px;
