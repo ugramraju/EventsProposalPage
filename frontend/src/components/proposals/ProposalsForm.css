@@ -19,7 +19,7 @@ body {
 .main-container {
   width: 60%;
   max-width: 100%;
-  height: 50vh;
+  height: auto;
   background: #ffffff;
   border: 1px solid #e5e0e0;
   border-radius: 12px;
@@ -62,7 +62,7 @@ body {
 .form-inside-boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .leftSide-container #eventName {
@@ -202,8 +202,8 @@ body {
 .button-container button,
 .update-btn {
   width: 100%;
-  max-width: 8em;
-  height: 3.5em;
+  max-width: 7em;
+  height: 3em;
   background: #4e94f4;
   border-radius: 8px;
   font: normal normal bold 1em Open Sans;
