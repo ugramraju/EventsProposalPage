@@ -8,7 +8,7 @@ const EventDetails = () => {
     <div>
       <UserHeader />
       <section className="top-background"></section>
-      <h1 style={{textAlign:"left", marginLeft:"100px"}}>Proposals</h1>
+      <h1 style={{textAlign:"left", marginLeft:"100px", fontSize:"1em"}}>Proposals</h1>
       <section>
         <Events/>
       </section>
