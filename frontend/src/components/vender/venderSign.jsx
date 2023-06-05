@@ -27,7 +27,7 @@ const VenderSignup = () => {
           "content-type": "application/json",
         },
       };
-      const response = await axios.post("https://my-eventproposalpage.onrender.com/api/vender/register", data,config);
+      const response = await axios.post("https://my-eventproposalpage.onrender.com/api/vender/register", data, config);
       setData({});
       setErrorMsg("");
       setSuccessMsg("Registration successful. Please go and sign in.");
@@ -46,9 +46,9 @@ const VenderSignup = () => {
 
   return (
     <div className="box1">
-      <span id="errMsg-1" style={{color:"red"}}>{errorMsg}</span>
-      <span id="errmessage" style={{color:"green"}}>{successMsg}</span>
-      <h1 style={{fontSize:"1em"}}>Register in your Account</h1>
+      <span id="errMsg-1" style={{ color: "red" }}>{errorMsg}</span>
+      <span id="errmessage" style={{ color: "green" }}>{successMsg}</span>
+      <h1 style={{ fontSize: "1em" }}>Register in your Account</h1>
       <form id="form">
         <input
           type="text"
@@ -66,11 +66,14 @@ const VenderSignup = () => {
         />
         <br />
         <input
-          type="text"
+          type="number"
           placeholder="Contact"
           value={data.contact || ""}
+          min="10"
+          max="10"
           onChange={(e) => setData({ ...data, contact: e.target.value })}
         />
+
         <br />
         <input
           type="password"
@@ -87,7 +90,7 @@ const VenderSignup = () => {
           onChange={(e) => setData({ ...data, confirmPassword: e.target.value })}
           autoComplete="new-password"
         />
-        <br /> 
+        <br />
         <button type="submit" id="btn" onClick={handleSubmit} className="login_register_btn">
           REGISTER
         </button>

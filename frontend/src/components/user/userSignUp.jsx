@@ -47,9 +47,9 @@ const UserSignUp = () => {
 
   return (
     <div className="box1">
-      <span id="errMsg-1" style={{color:"red"}}>{errorMsg}</span>
-      <span id="errmessage" style={{color:"green"}}>{successMsg}</span>
-      <h1 style={{fontSize:"1em"}}>Register in your Account</h1>
+      <span id="errMsg-1" style={{ color: "red" }}>{errorMsg}</span>
+      <span id="errmessage" style={{ color: "green" }}>{successMsg}</span>
+      <h1 style={{ fontSize: "1em" }}>Register in your Account</h1>
       <form id="form">
         <input
           type="text"
@@ -67,11 +67,14 @@ const UserSignUp = () => {
         />
         <br />
         <input
-          type="text"
+          type="number"
           placeholder="Contact"
           value={data.contact || ""}
+          min="10"
+          max="10"
           onChange={(e) => setData({ ...data, contact: e.target.value })}
         />
+
         <br />
         <input
           type="password"

@@ -52,9 +52,11 @@ const VenderLogin = () => {
       <h1 style={{ fontSize: "1em" }}>Sign in your Account</h1>
       <form id="form">
         <input
-          type="text"
+          type="number"
           placeholder="Contact"
           value={data.contact || ""}
+          min="10"
+          max="10"
           onChange={(e) => setData({ ...data, contact: e.target.value })}
         />
         <br />
