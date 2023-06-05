@@ -14,8 +14,10 @@
     margin: 50px;
     margin-top: 30px;
     border-radius: 20px;
-    grid-gap: 10px; /* Add the desired gap value here */
+    width: 100%;
+    grid-gap: 10px;
   }
+  
   
   .events_display_container img{
     width:100%;
