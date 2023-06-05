@@ -9,13 +9,13 @@
   }
   .events_display_container {
     display: grid;
-    grid-template-columns: repeat(5, 18%);
+    grid-template-columns: repeat(5, 15%);
     justify-items: center;
     margin: 50px;
     margin-top: 30px;
     border-radius: 20px;
     width: 100%;
-    grid-gap: 10px;
+    grid-gap: 5%;
   }
   
   
