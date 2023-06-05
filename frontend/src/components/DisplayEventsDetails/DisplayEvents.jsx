@@ -61,16 +61,16 @@ const DisplayEvent = () => {
         </div>
       </div>
       <div className="eventsvenue_arrangements">
-        <h1>Venue and Arrangements</h1>
+        <h2>Venue and Arrangements</h2>
         {description}
       </div>
       <div className="events_food_preferences">
-        <h1>Food Preferences</h1>
+        <h2>Food Preferences</h2>
         {foodPreferences}
       </div>
 
       <div className="myalbums_container_box">
-        <h1>My albums</h1>
+        <h2>My albums</h2>
         <div className="myalbums_container">
           {images.map((image, index) => (
             <img key={index} src={image} alt={index} />
@@ -78,7 +78,7 @@ const DisplayEvent = () => {
         </div>
       </div>
       <div className="events_contacts">
-        <h1>Contacts</h1>
+        <h2>Contacts</h2>
         <div style={{display:"flex", justifyContent:"space-between"}}>
         <div >
           <p>Contact 1</p>
@@ -95,7 +95,7 @@ const DisplayEvent = () => {
         </div>
       </div>
       <div className="events_container">
-        <h1>Events</h1>
+        <h2>Events</h2>
         {events}
       </div>
     </div>
