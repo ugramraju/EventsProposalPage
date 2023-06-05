@@ -107,7 +107,7 @@ body {
 }
 
 #budget {
-  max-width: 12.3125em;
+  width: 12.3125em;
   height: 2.5em;
   background: #ffffff;
   border: 1px solid #cccccc;
