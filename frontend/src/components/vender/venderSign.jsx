@@ -48,7 +48,7 @@ const VenderSignup = () => {
     <div className="box1">
       <span id="errMsg-1">{errorMsg}</span>
       <span id="errmessage">{successMsg}</span>
-      <h1 style={{fontSize:"1.5em"}}>Register in your Account</h1>
+      <h1 style={{fontSize:"1em"}}>Register in your Account</h1>
       <form id="form">
         <input
           type="text"

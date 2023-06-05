@@ -70,8 +70,9 @@ input{
   }
   
 .createAccount{
-    margin-top: 4em;
+    margin-top: 3em;
     font-weight: 800;
     color: rgb(75, 75, 241);
     cursor: pointer;
+    font-size: 1.2em;
 }
