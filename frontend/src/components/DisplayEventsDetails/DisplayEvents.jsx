@@ -44,7 +44,7 @@ const DisplayEvent = () => {
         <div className="display_events_details_box">
         <p>Name:<b>{createdBy.name}</b></p>
         <p>Email: <b>{createdBy.email}</b></p>
-        <div style={{display:"flex", justifyContent:"space-between"}}>
+        <div style={{display:"flex", justifyContent:"space-between", fontSize:"0.8em"}}>
           <span>StartDate: <b>{fromDate}</b></span>
           <span>EndDate: <b>{toDate}</b></span>
         </div>
