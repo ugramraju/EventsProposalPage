@@ -56,13 +56,13 @@ body {
 }
 
 .form-container {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .form-inside-boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .leftSide-container #eventName {
@@ -103,7 +103,6 @@ body {
   letter-spacing: 0.16px;
   color: #2d2d2e;
   opacity: 1;
-  margin-top: 1em;
   padding-bottom: 0.5em;
 }
 
