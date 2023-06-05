@@ -38,19 +38,19 @@ const MainDisplay = () => {
 </div>
 
       <div className="display_selected_event_heading_container">
-      <h1>Selected</h1>
+      <h1 style={{fontSize:"1.2em"}}>Selected</h1>
       <div className="display_selected_event_container">
       <img src={images[0]} alt="Proposal" width="100px"/>
-          <p style={{ margin: "0", fontSize:"1.5em", fontWeight:"600", marginLeft:"5%"}}>{createdBy.name}</p>
-          <p style={{ margin: "0", fontSize:"1.2em", marginLeft:"5%"}} >{budget}</p>
-          <p style={{ margin: "0",fontSize:"1.2em", marginLeft:"5%" }}>{placeOfEvent}</p>
+          <p style={{ margin: "0",fontWeight:"600", marginLeft:"5%"}}>{createdBy.name}</p>
+          <p style={{ margin: "0", marginLeft:"5%"}} >{budget}</p>
+          <p style={{ margin: "0", marginLeft:"5%" }}>{placeOfEvent}</p>
           <button style={{ cursor: "pointer", background:"white",border:"0px solid black",color:"red", float:"right" }}>
             <Link to={"/eventDetails"}>X</Link></button>
       </div>
       </div>
 
       <div className="proposals_againdispaly_container">
-        <h1>Proposals</h1>
+        <h1 style={{fontSize:"1.2em"}}>Proposals</h1>
         <Events/>
       </div>
         </div>
